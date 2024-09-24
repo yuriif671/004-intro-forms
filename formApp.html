@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Form example</title>
+        <style>
+            input.sum {
+                width: 215px;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                let buttonE = document.getElementById("actionButton")
+                buttonE.addEventListener('click', function(e) {
+                    let a = document.getElementById('d1').value
+                    let b = document.getElementById('d2').value
+                    let A = Number(a)
+                    let B = Number(b)
+                    document.getElementById('answer1').value = a + b
+                    document.getElementById('answer2').value = A + B
+                    
+                })
+
+            }
+        </script>
+    </head>
+    <body>
+        <label for="d1"> Number 1</label>
+        <input type="number" name="d1" id="d1">        
+        <br>
+        <label for="d2"> Number 2</label>
+        <input type="number" name="d2" id="d2">
+        <br>
+        <input class="sum" type="button" name="actionButton" id="actionButton" value="Calculate Sum">
+        <br>
+        <label for="answer1">Answer (text)</label>
+        <input type="text" name="answer1" id="answer1">
+        <br>
+        <label for="answer2">Answer (number)</label>
+        <input type="text" name="answer2" id="answer2">
+    </body>
+</html>
