@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    font-family: 'Comic Sans MS';
+}
+
+.title {
+    font-size: 5em;
+    margin-bottom: 0.25em;
+}
+
+label, select, input {
+    font-size: 2em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+input[type='radio'], input[type='checkbox'] { 
+    transform: scale(2); 
+}
+
+.submit {
+    display: inline-block;
+}
+
+#first-name {
+    color: red;
+}
+
+#last-name {
+    color: green;
+}
+
+#email {
+    color: royalblue;
+}

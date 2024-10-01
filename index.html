@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form App</title>
+</head>
+<body>
+    <div class="steal-credit-card">
+        <form action="
+        action_page.php" method="POST">
+        <div class="title">Steal Info Form</div>
+        <div>
+            <label for="first-name">First Name </label>
+            <input type="text" id=first-name placeholder="Ben" required>
+        </div>
+        <div>
+            <label for="last-name">Last Name </label>
+            <input type="text" id=last-name placeholder="Dover" required>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id=email placeholder="example@email.com">
+        </div>
+        <label for="car" id=car>How much money you got?</label>
+        <select name="cars" id="cars" required>
+            <option value="volvo">25,000 - 100,000$</option>
+            <option value="saab">1,000$ - 25,000$</option>
+            <option value="opel">0$ - 1,000$</option>
+            <option value="audi">in debt - 0$</option>
+        </select>
+        <div class="steal-data">
+            <label for="confirmation" id="confirmation">Can we steal your data?</label>
+            <input type="radio" id=yes name="option" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id=no name="option" value="no">
+            <label for="yes">No</label>
+        </div>
+        <div>
+            <label for="subscribe">Subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" min="0" max="99" value="1">
+        </div>
+        <div class="submit">
+            <input type="reset">
+            <input type="submit">
+        </div>
+        </form>
+        
+    </div>
+</body>
+</html>
